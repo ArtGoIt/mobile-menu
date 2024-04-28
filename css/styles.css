@@ -76,107 +76,23 @@ button {
 .navigation {
 }
 .navigation__toggle {
-  appearance: none;
 }
 .navigation__btn {
-  position: fixed;
-  top: 20px;
-  right: 2%;
-  width: 70px;
-  height: 70px;
-  background-color: blueviolet;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 25;
 }
 
 .navigation__icon {
-  position: relative;
-}
-
-.navigation__icon,
-.navigation__icon::after,
-.navigation__icon::before {
-  display: inline-block;
-  width: 20px;
-  height: 2px;
-  background-color: #000;
-}
-
-.navigation__icon::after,
-.navigation__icon::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  transition: all 400ms ease-in-out;
-}
-
-.navigation__icon::after {
-  top: 8px;
-}
-
-.navigation__icon::before {
-  top: -8px;
-}
-
-.navigation__toggle:checked + .navigation__btn .navigation__icon {
-  background-color: transparent;
-}
-
-.navigation__toggle:checked + .navigation__btn .navigation__icon::after {
-  top: 0;
-  transform: rotate(135deg);
-}
-
-.navigation__toggle:checked + .navigation__btn .navigation__icon::before {
-  top: 0;
-  transform: rotate(-135deg);
 }
 
 .navigation__bg {
-  position: fixed;
-  right: 2.1%;
-  top: 23px;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background: radial-gradient(#a14f03, #c3956a);
-  z-index: 10;
-  transition: all 400ms ease-in-out;
-}
-
-.navigation__toggle:checked ~ .navigation__bg {
-  transform: scale(80);
 }
 
 .navigation__nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100vh;
-  opacity: 0;
-  z-index: 20;
-  transition: all 400ms ease-in-out;
-}
-
-.navigation__toggle:checked ~ .navigation__nav {
-  width: 100%;
-  opacity: 1;
 }
 
 .navigation__list {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .navigation__item {
-  width: 100%;
-  text-align: center;
 }
 
 .navigation__item:not(:last-child) {
@@ -188,21 +104,8 @@ button {
   font-size: 30px;
   letter-spacing: 0.002em;
   text-transform: uppercase;
-  color: #fff;
-  /* color: red; */
-  background: linear-gradient(
-    120deg,
-    transparent 0%,
-    transparent 50%,
-    #fff 50%
-  );
-  background-size: 220%;
-  transition: all 400ms ease-in-out;
-}
-
-.navigation__link:hover {
-  color: #ba8554;
-  background-position: 100%;
+  /* color: #fff; */
+  color: red;
 }
 
 .test {
